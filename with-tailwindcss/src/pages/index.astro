@@ -17,9 +17,41 @@ import Button from '../components/Button.astro';
 	</head>
 
 	<body>
-		<div class="grid place-items-center h-screen content-center">
+		<div class="profile-container">
+			<div class="profile-header">
+				<img src="/src/pages/profilbild.png" alt="Profilbild" class="profile-image">
+				<h1 class="animate-jump-in animate-delay-300 animate-once">htmlh4cker</h1>
+				<p>Fachinformatiker | Cybersecurity</p>
+			</div>
+	
+			<div class="profile-content">
+				<section class="profile-section">
+					<h2>Über mich</h2>
+					<p>Hier kannst du eine kurze Beschreibung über dich schreiben. Zum Beispiel deine Interessen, Fähigkeiten und Erfahrungen.</p>
+				</section>
+	
+				<section class="profile-section">
+					<h2>Fähigkeiten</h2>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>React</li>
+						<li>UI/UX Design</li>
+					</ul>
+				</section>
+	
+				<section class="profile-section">
+					<h2>Kontakt</h2>
+					<p>E-Mail: deine.email@beispiel.com</p>
+					<p>LinkedIn: <a href="#">Dein LinkedIn-Profil</a></p>
+				</section>
+			</div>
+		</div>
+	
+		<!--<div class="grid place-items-center h-screen content-center">
 			<Button>Tailwind Button in Astro!</Button>
 			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
+		</div>-->
 	</body>
 </html>
