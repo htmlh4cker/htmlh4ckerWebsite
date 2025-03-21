@@ -1,62 +1,74 @@
 @import 'tailwindcss';
-@import 'tailwindcss-animated';
+@import "tailwindcss-animated";
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #242323;
 }
 
-.profile-container {
-    width: 80%;
-    margin: 50px auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.profile-header {
-    background-color: #333;
-    color: white;
+header {
+    background-color: #242323;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    padding: 2em 0;
 }
 
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1em;
+.PaulAllensCard{
+    font-size: 8rem;
+    margin: 0;
+    color: #fff;
+    padding:10px 30px;
+    border-radius:20px;
+    border:none;
+    box-shadow:0 0 0 4px rgb(255, 255, 255);
+    float:left;
 }
 
-.profile-content {
-    padding: 2em;
+.Socials{
+    margin: 0;
+    color: #fff;
+    padding:10px 30px;
+    border-radius:20px;
+    border:none;
+    box-shadow:0 0 0 4px rgb(255, 255, 255);
+    float:right;
+}
+h1 {
+    font-size: 8rem;
 }
 
-.profile-section {
-    margin-bottom: 2em;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
 }
 
-.profile-section h2 {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5em;
+main {
+    max-width: 1500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-.profile-section ul {
-    list-style: none;
-    padding: 0;
+.blog-post {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
 }
 
-.profile-section li {
-    margin-bottom: 0.5em;
+.post-meta {
+    font-size: 0.9rem;
+    color: #777;
 }
 
-/* Responsives Design */
-@media(max-width: 768px) {
-    .profile-container {
-        width: 95%;
-    }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #242323;
+    text-align: center;
+    padding: 1rem;
 }
