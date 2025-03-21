@@ -9,7 +9,10 @@ export default defineConfig({
     plugins: [
       tailwindcss({
         plugins: [
-          require('tailwindcss-animated')
+          async () => {
+            const animated = await import('tailwindcss-animated');
+            return animated.default;
+          }
         ]
       })
     ]
