@@ -52,7 +52,7 @@ import Button from '../components/Button.astro';
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+            <a href="/src/pages/projects.astro" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tutorials</a>
             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
           </div>
@@ -87,14 +87,35 @@ import Button from '../components/Button.astro';
 
     <main>
         <div class="PaulAllensCard">
-			<div class="animate-fade-up">htmlh4cker</div>
-		</div>
+			    <h1 class="animate-fade-up underline">htmlh4cker</h1>
+          <div class="animate-fade-up">
+            <p class="underline">
+              My latest Projects:
+            </p>
+          </div>
+        </div>
 		<div class="Socials">
 			<h1 class="animate-fade-up underline">Socials</h1>
 			<button class="group relative">
 				<div class="relative z-10 inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-6 font-medium text-white transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3">
-				<img src="src/pages/redditIcon.png" height="20" width="20"></img>
+				<img src="/src/pages/redditIcon.png" height="20" width="20"></img>
 				Reddit
+				</div>
+				<div class="absolute inset-0 z-0 h-full w-full rounded-md transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:[box-shadow:5px_5px_#a3a3a3,10px_10px_#d4d4d4,15px_15px_#e5e5e5]">
+				</div>
+			</button>
+      <button class="group relative">
+				<div class="relative z-10 inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-6 font-medium text-white transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3">
+				<img src="/src/pages/githubIcon.png" height="20" width="20"></img>
+				Github
+				</div>
+				<div class="absolute inset-0 z-0 h-full w-full rounded-md transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:[box-shadow:5px_5px_#a3a3a3,10px_10px_#d4d4d4,15px_15px_#e5e5e5]">
+				</div>
+			</button>
+      <button class="group relative">
+				<div class="relative z-10 inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-transparent px-6 font-medium text-white transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3">
+				<img src="/src/pages/youtubeIcon.png" height="20" width="20"></img>
+				Youtube
 				</div>
 				<div class="absolute inset-0 z-0 h-full w-full rounded-md transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:[box-shadow:5px_5px_#a3a3a3,10px_10px_#d4d4d4,15px_15px_#e5e5e5]">
 				</div>
